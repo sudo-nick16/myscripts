@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func setup() {
+func Setup() {
   out, err := exec.Command("pacmd", "list-sinks").Output()
   if err != nil {
     log.Fatalf("SoundError: %v", err)
