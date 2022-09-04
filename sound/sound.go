@@ -1,4 +1,4 @@
-package main
+package sound
 
 import (
 	"log"
@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func main() {
+func setup() {
   out, err := exec.Command("pacmd", "list-sinks").Output()
   if err != nil {
     log.Fatalf("SoundError: %v", err)
